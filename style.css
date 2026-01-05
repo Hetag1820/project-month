@@ -1,0 +1,220 @@
+body {
+    display: flex;
+    background-color: rgb(75, 78, 89);
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+
+header {
+    display: inline-flex;
+    background:
+        linear-gradient(
+            135deg,
+             rgb(95, 102, 108),
+             rgb(83, 95, 106)
+
+        );
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    
+}
+
+header * {
+    margin: 0;
+}
+
+header .text {
+    color: rgb(142, 142, 142);
+    text-align: center;
+    padding: 5px 0px;
+    font-family: 'Handlee';
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 20px;
+
+    user-select: none;
+}
+
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+    width: fit-content;
+    gap: 10px;
+    box-sizing: border-box;
+
+}
+
+.textarea {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    width: 700px;
+    border-radius: 5px;
+    background-color: rgb(122, 136, 150);
+    color: snow;
+    font-size: 16px;
+    
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.top_button {
+    font-size: 30px;
+    background-color: rgb(83, 95, 106);
+    border: 2px solid rgb(72, 72, 87);
+    border-radius: 5px;
+    color: rgb(53, 57, 62);
+    transition: all 0.2s ease;
+}
+
+.top_button:hover {
+    box-shadow: inset 0 0 10px black;
+}
+
+.top_button:active {
+    transform: scale(0.85);
+}
+
+.controls {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 10px;
+
+    z-index: 1000; /* обязательно выше, чем список */
+}
+
+.section_2 {
+    background-color: rgb(83, 95, 106);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 500px;
+
+
+    word-break: break-all;
+}
+
+.section_2 h2 {
+    display: flex;
+    font-size: 14px;
+    justify-content: end;
+    margin-right: 10px;
+    color: rgb(5, 5, 5);
+
+    user-select: none;
+}
+
+.dark-clipboard {
+    filter: brightness(0); /* делает чёрным */
+}
+
+
+textarea {
+    border: none;
+    border-radius: 2px;
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+textarea.red {
+    background-color: rgba(165, 42, 42, 0.172);
+    box-shadow: 0 0 10px rgba(255, 34, 34, 0.34);
+}
+
+.task_check {
+    background-color: rgb(156, 156, 28);
+    border-radius: 5px;
+    padding: 5px 2px;
+    margin: 10px 0;
+}
+
+#task-list li {
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    margin: 5px 0;
+    
+    user-select: none;
+
+    transition: all 0.1s ease;
+    
+
+}
+
+
+
+
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 1px solid red;
+    box-shadow: inset 0 0 10px brown;
+    border-radius: 20%;
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    user-select: none;
+}
+
+.delete-btn:active {
+    transform: scale(0.80);
+}
+
+.delete-btn:hover {
+    background-color: snow;
+}
+
+#GitHub_btn {
+    border: 2px solid rgb(72, 72, 87);
+    border-radius: 5px;
+    background-color: rgb(83, 95, 106);
+    padding: 5px 5px;
+    font-size: 20px;
+    color: rgb(53, 57, 62);
+    transition: all 0.5s ease;
+}
+
+#GitHub_btn a {
+    text-decoration: none; /* убирает подчёркивание */
+    color: inherit;        /* наследует цвет кнопки */
+    font: inherit;         /* наследует шрифт кнопки */
+}
+
+
+#GitHub_btn:hover {
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+
+#GitHub_btn:active {
+    transform: scale(0.85);
+}
