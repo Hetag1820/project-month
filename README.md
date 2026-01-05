@@ -33,5 +33,6 @@
 с акцентом на практику и постепенный рефакторинг.
 
 ## Demo
-[Смотреть видео на YouTube]([https://www.youtube.com/watch?v=ТВОЁ_ВИДЕО](https://youtu.be/fqgrkCw2Xe8))
+[Смотреть видео на YouTube](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
 
